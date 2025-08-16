@@ -1,95 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuestros Viajes</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: #4A75D1;
-      display: flex;
-      flex-direction: column; /* Agregado para apilar la tarjeta y el texto */
-      justify-content: flex-start;
-      align-items: center; /* Centrado horizontal */
-      min-height: 100vh;
-      padding: 40px 10px;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Viajes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #4A75D1;
+      display: flex;
+      flex-direction: column; /* Apila los elementos verticalmente */
+      justify-content: flex-start;
+      align-items: center; /* Centra horizontalmente */
+      min-height: 100vh;
+      padding: 40px 10px;
+    }
 
-    .card {
-      background: #fff;
-      width: 100%;
-      max-width: 400px;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      text-align: center;
-      padding: 120px 20px 20px;
-      position: relative;
-    }
+    .card {
+      background: #fff;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 120px 20px 20px;
+      position: relative;
+    }
 
-    .card img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 6px solid #fff;
-      position: absolute;
-      top: -25px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-    .card h2 {
-      margin: 10px 0;
-      font-size: 22px;
-      font-weight: bold;
-      color: #222;
-    }
+    .card h2 {
+      margin: 10px 0;
+      font-size: 22px;
+      font-weight: bold;
+      color: #222;
+    }
 
-    .links {
-      margin-top: 20px;
-      max-height: 250px; /* Scroll vertical */
-      overflow-y: auto;
-    }
+    .links {
+      margin-top: 20px;
+      max-height: 250px; /* Scroll vertical */
+      overflow-y: auto;
+    }
 
-    .link-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 20px;
-      background: #f8fdf9;
-      color: #4CAF50;
-      font-size: 16px;
-      text-decoration: none;
-      transition: 0.2s ease;
-    }
+    .link-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 20px;
+      background: #f8fdf9;
+      color: #4CAF50;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
 
-    .link-item:hover {
-      background: #eaf8f0;
-    }
+    .link-item:hover {
+      background: #eaf8f0;
+    }
 
-    .arrow {
-      font-weight: bold;
-      color: #4CAF50;
-    }
-        
-  </style>
+    .arrow {
+      font-weight: bold;
+      color: #4CAF50;
+    }
+
+    /* Estilo para el texto debajo de la tarjeta */
+    .explanatory-text {
+        margin-top: 20px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        max-width: 400px;
+        line-height: 1.5; /* Espaciado entre líneas */
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <img src="https://raw.githubusercontent.com/LeoBallari/viajes/refs/heads/main/img/foto.jpg" alt="Foto central">
-    <h2>Nuestros Viajes</h2>
-    <div class="links">
-      <a href="https://mega.nz/folder/eSoC2SrA#T6BmbIuOduc3qAcoOOiJdg" class="link-item">2025 - Agosto // Merlo - Villa Gral. Belgrano <span class="arrow">→</span></a>
-      <a href="https://mega.nz/folder/Xapi3R6b#KlVnrVuD4vWnP4QR-nPgYw" class="link-item">2025 - Mayo // Uruguay - Brasil <span class="arrow">→</span></a>
-      <a href="#" class="link-item">2025 - Abril <span class="arrow">→</span></a>
-      <a href="#" class="link-item">2025 - Marzo <span class="arrow">→</span></a>
-      <a href="#" class="link-item">2024 - Diciembre <span class="arrow">→</span></a>
-      <a href="#" class="link-item">2024 - Noviembre <span class="arrow">→</span></a>
-    </div>
-  </div>
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/LeoBallari/viajes/refs/heads/main/img/foto.jpg" alt="Foto central">
+    <h2>Nuestros Viajes</h2>
+    <div class="links">
+      <a href="https://mega.nz/folder/eSoC2SrA#T6BmbIuOduc3qAcoOOiJdg" class="link-item">2025 - Agosto // Merlo - Villa Gral. Belgrano <span class="arrow">→</span></a>
+      <a href="https://mega.nz/folder/Xapi3R6b#KlVnrVuD4vWnP4QR-nPgYw" class="link-item">2025 - Mayo // Uruguay - Brasil <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2025 - Abril <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2025 - Marzo <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2024 - Diciembre <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2024 - Noviembre <span class="arrow">→</span></a>
+    </div>
+  </div>
+  
+  <p class="explanatory-text">
+    Aquí encontrarás todos nuestros viajes y aventuras. <br>
+    Desde escapadas de fin de semana hasta grandes travesías, <br>
+    cada enlace te llevará a un álbum de fotos y videos <br>
+    para revivir los mejores momentos junto a nosotros.
+  </p>
+
 </body>
 </html>
