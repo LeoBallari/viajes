@@ -1,1 +1,94 @@
-<h1> Viajes en Moto </h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Viajes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #4A75D1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 10px;
+    }
+
+    .card {
+      background: #fff;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 70px 20px 20px;
+      position: relative;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .card h2 {
+      margin: 10px 0;
+      font-size: 22px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .links {
+      margin-top: 20px;
+      max-height: 250px; /* Scroll vertical */
+      overflow-y: auto;
+    }
+
+    .link-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 20px;
+      background: #f8fdf9;
+      color: #4CAF50;
+      font-size: 16px;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .link-item:hover {
+      background: #eaf8f0;
+    }
+
+    .arrow {
+      font-weight: bold;
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://mega.nz/file/WDBhXALQ#DXA_30F-59G0NXtorhzOG-wArM2HsS6O2b6RsnZlSLk" alt="Foto central">
+    <h2>Nuestros Viajes</h2>
+    <div class="links">
+      <a href="#" class="link-item">2025 - Agosto // Merlo - Villa Gral. Belgrano <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2025 - Mayo // Uruguay - Brasil <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2025 - Abril <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2025 - Marzo <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2024 - Diciembre <span class="arrow">→</span></a>
+      <a href="#" class="link-item">2024 - Noviembre <span class="arrow">→</span></a>
+    </div>
+  </div>
+</body>
+</html>
+
